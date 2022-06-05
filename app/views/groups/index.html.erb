@@ -1,0 +1,8 @@
+<% @groups.each do |group| %>
+  <tr>
+    <td><%#= attachment_image_tag(group, :image, :fill, 50, 50, fallback: "no-image-icon.jpg") %></td>
+    <td><%= group.introduction %></td>
+    <td>
+      <%= group.users.count %>
+    </td>
+  </tr>
